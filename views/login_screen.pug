@@ -1,0 +1,13 @@
+extends test
+
+block content
+    div.text-center
+        form(class="login" method="get" action="/login")
+           h1 Login
+           p
+           input(type="username" name="username" class="form-control" placeholder="Username" required autofocus)
+           p          
+           input(type="password" name="password" class="form-control" placeholder="Password" required)
+           p
+           button(type="submit") Sign in
+        body= passed_in_text
